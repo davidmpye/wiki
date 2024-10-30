@@ -1,35 +1,37 @@
-# Chapter 1
+# MDB - Multi drop bus
 
-## Section 1
+## What is it?
 
-## Section 2
+MDB (Multi Drop Bus) is a standard used in vending machines to define how a vending machine controller can provide power to, and communicate with a range of commonly used peripherals.
+It's quite an old protocol, having been around since at least the 1990s.
 
-# Chapter 2
+## What is it for?
 
-## Section 1
+The MDB bus allows you to connect a number of devices used in a vending machine to the VMC (Vending Machine Controller).
 
-## Section 2
+Commonly used devices are:
 
-# Chapter 3
+* Contactless card reader (called Cashless Device)
+* Coin Acceptor (takes coins and can dispense change)
+* Bill validator (takes paper money - uncommon in Europe, but more common in the USA)
+* Telemetry devices - used for audit purposes etc
 
-## Section 1
+## How does it work?
 
-## Section 2
+The specification defines the pinout, and the connector used for MDB:
 
-# Chapter 4
+It is a serial bus, with optoisolators on each device.   It runs at 9600 baud, but the key unusual thing is that it is a 9-bit bus, rather than the more common 8 bits.
 
-## Section 1
+Each device has a preset address, based on what type of device it is.  For example, all coin acceptors have a base address of 0x80. 
 
-## Section 2
+The 9th bit is used in two ways:
 
-# Chapter 5
+* By the VMC, in the first 9-bit byte of a message, to indicate it is addressing a device.
+* By the device, to indicate last byte of a reply
 
-## Section 1
+# Hardware interface
 
-## Section 2
+## Description
 
-# Chapter 6
+## Schematic
 
-## Section 1
-
-## Section 2
