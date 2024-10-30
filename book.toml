@@ -1,16 +1,16 @@
 [book]
-authors = ["zjp <jiping_zhou@foxmail.com>"]
-language = "zh"
+authors = ["David Pye <davidmpye@gmail.com>"]
+language = "en"
 multilingual = false
 src = "src"
-title = "book-name"
+title = "davidmpye wiki"
 
 [preprocessor.theme]
 pagetoc = true
 sidebar-width = "250px"
 
 [output.html]
-default-theme = "ayu"
+default-theme = "dark"
 git-repository-url = ""
 additional-css = ["theme/pagetoc.css"]
 additional-js = ["theme/pagetoc.js"]
